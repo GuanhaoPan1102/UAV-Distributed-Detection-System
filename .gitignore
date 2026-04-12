@@ -1,0 +1,40 @@
+# --- ESP-IDF 相關 (關鍵：防止幾百 MB 的編譯產物上傳) ---
+**/build/
+**/sdkconfig
+**/sdkconfig.old
+**/managed_components/
+**/dependencies.lock
+**/esp_idf_components.json
+
+# --- 容器與環境配置 (Docker / DevContainer) ---
+.devcontainer/
+.docker/
+docker-compose.override.yml
+
+# --- 編輯器與系統檔案 ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.bak
+
+# --- Python 相關 (用於後續數據分析) ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+ENV/
+
+# --- 數據檔案 (防止大量實驗數據塞爆倉庫) ---
+**/*.csv
+**/*.log
+**/*.bin
+**/*.pcap
+
+# --- 備份與暫存檔 ---
+*~
+*.tmp
+*.temp

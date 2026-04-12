@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"name": "common_components",
+			"path": "common_components"
+		},
+		{
+			"name": "Firmware_UAV",
+			"path": "Firmware_UAV"
+		},
+		{
+			"path": "Firmware_Scanner"
+		},
+		{
+			"path": "Firmware_SlaveTTGO"
+		},
+		{
+			"path": "Firmware_Logger"
+		}
+	],
+	"settings": {}
+}
