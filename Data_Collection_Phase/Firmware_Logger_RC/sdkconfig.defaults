@@ -1,0 +1,23 @@
+# ==========================================
+# Firmware_Logger (Data Collection Phase)
+# 職責: ESP-NOW 接收、Terminal 視覺化監控
+# ==========================================
+
+# 1. 儲存與核心效能解放
+CONFIG_ESPTOOLPY_FLASHSIZE_4MB=y
+CONFIG_ESPTOOLPY_FLASHSIZE="4MB"
+CONFIG_ESP_DEFAULT_CPU_FREQ_MHZ_240=y
+CONFIG_ESP_DEFAULT_CPU_FREQ_MHZ=240
+CONFIG_ESPTOOLPY_FLASHMODE_QIO=y
+CONFIG_ESPTOOLPY_FLASHMODE="qio"
+CONFIG_ESPTOOLPY_FLASHFREQ_80M=y
+CONFIG_ESPTOOLPY_FLASHFREQ="80m"
+
+# 2. 關閉藍牙 (純使用 Wi-Fi 底層的 ESP-NOW)
+CONFIG_BT_ENABLED=n
+
+# 3. SD 卡檔案系統支援 (必須開啟長檔名，否則無法建立帶有 MAC 資訊的 CSV 檔案)
+CONFIG_FATFS_LFN_HEAP=y
+
+# 4. RTOS 效能 (標準頻率 100Hz 已足夠)
+CONFIG_FREERTOS_HZ=100
