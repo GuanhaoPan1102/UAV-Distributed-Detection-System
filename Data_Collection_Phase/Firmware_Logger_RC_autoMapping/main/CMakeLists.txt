@@ -1,0 +1,14 @@
+idf_component_register(
+    SRCS
+        "main.c"
+    INCLUDE_DIRS
+        "."
+    REQUIRES
+        nvs_flash
+        esp_timer
+        freertos
+        app_dashboard
+        app_route_mapper
+        drv_espnow_rx
+        drv_sd_card
+)

@@ -1,0 +1,10 @@
+idf_component_register(
+    SRCS
+        "app_route_mapper.c"
+    INCLUDE_DIRS
+        "include"
+    REQUIRES
+        freertos
+        log
+        dc_protocol_rc
+)

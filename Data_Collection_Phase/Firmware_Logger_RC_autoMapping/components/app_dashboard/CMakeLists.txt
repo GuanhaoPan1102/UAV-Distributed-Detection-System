@@ -1,0 +1,11 @@
+idf_component_register(
+    SRCS
+        "app_dashboard.c"
+    INCLUDE_DIRS
+        "include"
+    REQUIRES
+        freertos
+        esp_timer
+        dc_protocol_rc
+        app_route_mapper
+)
